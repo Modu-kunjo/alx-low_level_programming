@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * Main - Entry point of the program
+ * main - Entry point of the program
  * Description: Checking the last the digit of assign number to the variable
- * Return: Always (0) success
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -22,7 +22,7 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is less than 6 and not zero\n", n, m);
 	}
-	else if (m == 0)
+	else
 	{
 		printf("Last digit of %d is %d and is zero\n", n, m);
 	}

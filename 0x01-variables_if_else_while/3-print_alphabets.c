@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	ch n;
+	int ch;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{

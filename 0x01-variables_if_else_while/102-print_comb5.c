@@ -20,7 +20,7 @@ int maint(void)
 					if (((k + j) > (c + i) && k >= c) || c < k)
 					{
 						putchar(c);
-						putcahr(i);
+						putchar(i);
 						putchar(' ');
 						putchar(k);
 						putchar(k);

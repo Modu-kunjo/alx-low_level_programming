@@ -5,7 +5,7 @@
  * Description: print all possible combination of 2-digit number
  * Return: Always 0 (success)
  */
-int maint(void)
+int main(void)
 {
 	int c, i, k, j;
 

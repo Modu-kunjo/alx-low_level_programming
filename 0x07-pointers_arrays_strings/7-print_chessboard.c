@@ -3,7 +3,7 @@
 /**
  * print_chessboard - prints the chess board
  * @a: input pointer
- * Return: nothing
+ * Return: return nothing
  */
 
 void print_chessboard(char (*a)[8])
@@ -25,4 +25,3 @@ void print_chessboard(char (*a)[8])
 	}
 	_putchar('\n');
 }
-

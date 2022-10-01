@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	int cents;
-	int quaters_25, dimes_10, nickels_5, coin_2, pennis_1;
+	int quarters_25, dimes_10, nickels_5, coin_2, pennies_1;
 	int change;
 
 	if (argc != 2)
@@ -26,8 +26,8 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	quaters_25 = cents / 25;
-	cents = cents - (quaters_25 * 25);
+	quarters_25 = cents / 25;
+	cents = cents - (quarters_25 * 25);
 
 	dimes_10 = cents / 10;
 	cents = cents - (dimes_10 * 10);
@@ -40,6 +40,6 @@ int main(int argc, char *argv[])
 
 	pennies_1 = cents / 1;
 
-	change = qauters_25 + dimes_10 + nickels_5 + coin_2 + pennis_1;
+	change = quarters_25 + dimes_10 + nickels_5 + coin_2 + pennies_1;
 	return (0);
 }

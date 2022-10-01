@@ -41,5 +41,6 @@ int main(int argc, char *argv[])
 	pennies_1 = cents / 1;
 
 	change = quarters_25 + dimes_10 + nickels_5 + coin_2 + pennies_1;
+	printf("%d\n", change);
 	return (0);
 }

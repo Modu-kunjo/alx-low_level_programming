@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -10,10 +12,9 @@
  */
 void init_dog(struck dog *d, char *name, float age, char *owner)
 {
-	if (d)
-	{
-		d->name = name;
-		d->age = age;
-		d->owner = owner;
-	}
+	if (d == NULL)
+		d = malloc(sizeof(struck dog));
+	d->name = name;
+	d->age = age;
+	d->owner = owner;
 }

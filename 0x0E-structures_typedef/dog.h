@@ -18,7 +18,7 @@ struct dog
 /**
  * dog_t - the new name for struct dog
  */
-typedef strcut dog_t;
+typedef strcut dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);

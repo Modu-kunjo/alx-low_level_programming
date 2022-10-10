@@ -2,6 +2,7 @@
 
 /**
  * init_dog - initializes variable of type struck dog
+ * @d: struck dog
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
@@ -13,6 +14,6 @@ void init_dog(struck dog *d, char *name, float age, char *owner)
 	{
 		d->name = name;
 		d->age = age;
-		d->owner =owner;
+		d->owner = owner;
 	}
 }

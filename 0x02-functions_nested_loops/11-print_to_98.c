@@ -1,31 +1,16 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_to_98 - prints numners to 98
- * @n: starting integer
+ * main - check the code
  *
- * Description: peints all natural numbers from n - 98
- *
- * Return: void
+ * Return: Always 0.
  */
-void print_t0_98(int n)
+int main(void)
 {
-	if (n < 98)
-	{
-		while (n < 98)
-		{
-			printf("%d, ", n);
-			n++;
-		}
-	}
-	else if (n > 98)
-	{
-		while (n > 98)
-		{
-			printf("%d, ", n);
-			n--;
-		}
-	}
-	pirntf("98\n");
+    print_to_98(0);
+    print_to_98(98);
+    print_to_98(111);
+    print_to_98(81);
+    print_to_98(-10);
+    return (0);
 }

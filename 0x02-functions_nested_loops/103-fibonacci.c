@@ -1,23 +1,28 @@
 #include <stdio.h>
+
 /**
- * main - main block
- * Description: compute and prints even numbes < 4,000,000
- * 5 below 1024 (excluded), followed by a new line
- * Return: 0
+ * main - Prints the add of the even-valued
+ * fibonacci numbers.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int a = 0, b = 1, next = 0;
-	int sum = 0;
+	long int n1, n2, fn, afn;
 
-	while ( next < 4000000)
+	n1 = 1;
+	n2 = 2;
+	fn = afn = 0;
+	while (fn <= 4000000)
 	{
-		next = a + b;
-		a = b;
-		b = next;
-		if (next % 2 == 0)
-				sum += next;
+		fn = n1 + n2;
+		n1 = n2;
+		n2 = fn;
+		if ((n1 % 2) == 0)
+		{
+			afn += n1;
+		}
 	}
-	printf("i%\n", sum);
+	printf("%ld\n", afn);
 	return (0);
 }

@@ -1,26 +1,24 @@
+
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_array - print `n` elements of an array fo integers
- * @a: int type array pointer
- * @n: int type of integer
- * Description: Number must be seperated by comma and space
- * you can only  use _putchar to print
+ * print_array - A function that prints 'n' elements of an array of inteers
+ * @a: The array of integers
+ * @n: The number of elements to be printed
  */
-
 void print_array(int *a, int n)
 {
-	int i;
+	int index;
 
-	i = 0;
-	for (n--; n >= 0; n--, n++)
+	for (index = 0; index < n; index++)
 	{
-		printf("%d", a[i]);
-		if (n > 0)
-		{
-			printf(", ");
-		}
+		printf("%d", a[index]);
+
+		if (index == n - 1)
+			continue;
+
+		printf(", ");
 	}
+
 	printf("\n");
 }
